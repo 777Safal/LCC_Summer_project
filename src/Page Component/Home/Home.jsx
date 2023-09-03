@@ -11,7 +11,7 @@ function Home() {
     {name1:'https://scontent.fktm16-1.fna.fbcdn.net/v/t39.30808-6/320881914_1132637144121965_4336597109930524417_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5614bc&_nc_ohc=3WORoqibXDMAX_lRVqe&_nc_ht=scontent.fktm16-1.fna&oh=00_AfDKXEjNPDUk1eERt38-5Ow3Y6_T-l2qg4dFc74jjLP6gQ&oe=64F76C90'},
   ]
   return (
-    <div className='w-full h-[100vh] bg-[url(https://img.freepik.com/free-vector/3d-traingle-background-vivid-colors_23-2148410160.jpg?w=826&t=st=1693586113~exp=1693586713~hmac=40d39d627907fe30d101a2928b212258f90a8166613f6f2c8aa69acde47a64cf)] bg-cover bg-no-repeat'>    
+    <div className='w-full h-[100vh]'>    
       <div className='w-10/12 h-2/4 flex items-end mx-auto'>
         <h1 className='max-w-[22ch] uppercase text-4xl font-robotSlab font-bold tracking-wider text-zinc-50 '>{data[0].h1}</h1>
       </div>
@@ -19,7 +19,7 @@ function Home() {
         <img src={'image1'} alt="" />
       </div> */}
 
-      <div className='flex w-10/12 mx-auto'>
+      <div className=' flex w-10/12 mx-auto'>
         {Image.map((val,i)=>{
           return <div key={i} className='w-[330px] h-[350px] mx-5 rounded-md overflow-hidden '>
             <img src={val.name1} className='bg-contain bg-no-repeat w-full h-full' />
