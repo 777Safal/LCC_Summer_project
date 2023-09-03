@@ -8,20 +8,23 @@ import Book from './Page Component/Booking/Book'
 import Footer from './Page Component/Footer/Footer'
 import Contactus from './Page Component/Contact/Contactus'
 import Aboutus from './Page Component/About/Aboutus'
-import Tournament from './Page Component/ICon/Tournament'
+import Login from './Page Component/Login And Signup/Login'
+import SignUp from './Page Component/Login And Signup/Signin'
+
 
 function App() {
   
 
   return (
     <div className='bg-gradient-to-b from-yellow-200 to-white'>
+      <SignUp/>
+      <Login/>
       <Nav/>
       <Home/>
       <Book/>
       <Footer/>
       <Contactus/>
       <Aboutus/>
-      <Tournament/>
     </div>
   )
 }
