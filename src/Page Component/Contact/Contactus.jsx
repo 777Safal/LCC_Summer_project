@@ -56,7 +56,7 @@ function Contactus() {
         
         <div className='w-full flex mb-10  justify-center tracking-wider'>
           <div className='w-10/12 bg-transparent rounded-md overflow-hidden relative flex'> 
-            <div className='w-2/6 py-3 pl-5 mr-10 rounded-md bg-yellow-300'>
+            <div className='w-2/6 shadow-2xl py-3 pl-5 mr-10 rounded-md bg-yellow-300'>
               <h1 className=' text-3xl font-bold text-slate-700'>{heading[1].h1}</h1>
               <div>
                   {contact.map((val,i)=>{
@@ -74,11 +74,8 @@ function Contactus() {
               </div>
             </div>
             {/* form section */}
-            <div className='w-4/6 px-5 py-3 rounded-md bg-yellow-300 dark:bg-slate-300'
-            data-aos='fade-up' data-aos-easing="ease-in-sine" data-aos-delay='300' 
-            data-aos-offset="300" data-aos-once="true"
-            >
-              <div className=' text-3xl mb-8 font-bold text-slate-700'>{heading[2].h1}</div>
+            <div className='w-4/6 px-5 py-3 rounded-md bg-yellow-300 dark:bg-slate-300 shadow-2xl'>
+                <div className=' text-3xl mb-8 font-bold text-slate-700'>{heading[2].h1}</div>
                   <Formik 
                   initialValues={{
                     name:'',

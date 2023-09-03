@@ -1,9 +1,6 @@
 import React from 'react'
 import {TbTournament} from 'react-icons/tb'
-import {LuTrophy} from 'react-icons/lu'
-import {MdStadium} from 'react-icons/md'
-import {IoIosPeople} from 'react-icons/io'
-import {GiAutoRepair} from 'react-icons/gi'
+
 
 function Tournament() {
   return (

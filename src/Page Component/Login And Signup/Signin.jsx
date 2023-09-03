@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { Form, Formik, ErrorMessage, Field } from "formik";
 import { useAsyncError, useNavigate } from "react-router-dom";
 import * as yup from "yup";
-import { type } from "@testing-library/user-event/dist/type";
+// import { type } from "@testing-library/user-event/dist/type";
 
 const schema = yup.object().shape({
   first_name: yup.string().required("First name is required"),
@@ -35,9 +35,6 @@ function SignUp() {
     { label: "Date of Birth:", type: "date", identiy: "date_of_birth" },
   ];
 
-  const [errMsg, setErrMsg] = useState("");
-
-  const navigate = useNavigate();
   return (
     <div className="bg-gradient-to-b font-poping from-yellow-200 to-white flex items-center justify-center ">
       <div className="w-3/4 my-10 p-5 bg-white rounded-md shadow-2xl">
