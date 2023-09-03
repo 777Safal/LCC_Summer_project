@@ -7,6 +7,7 @@ export default {
     extend: {
       fontFamily:{
         robotSlab:['Roboto Slab'],
+        roboto:["Roboto"],
       }
     },
   },

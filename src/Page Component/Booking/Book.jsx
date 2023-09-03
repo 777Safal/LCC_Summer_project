@@ -33,9 +33,9 @@ function Book() {
     {h1:'09:00 PM - 10:00 PM'},
   ]
   return (
-    <div className='mt-10 w-10/12 mx-auto font-robotSlab rounded-sm overflow-hidden'>
+    <div className='mt-10 w-10/12 mx-auto rounded-sm overflow-hidden'>
       <div className='bg-yellow-300 flex flex-col items-center'>
-        <h1 className='text-3xl my-3 font-medium'>{data[0].h1}</h1>
+        <h1 className='text-3xl font-bold text-slate-700 font-robotSlab my-3 font-bold'>{data[0].h1}</h1>
         <div>
           <ul className='flex'>
             {week.map((val,i)=>{
