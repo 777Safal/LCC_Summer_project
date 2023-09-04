@@ -17,11 +17,11 @@ function App() {
 
   return (
     <div className='bg-gradient-to-b from-yellow-200 to-white'>
-      <SignUp/>
-      <Login/>
-      <Nav/>
-      <Home/>
-      <Book/>
+      {/* <SignUp/> */}
+      {/* <Login/> */}
+      {/* <Nav/> */}
+      {/* <Home/> */}
+      {/* <Book/> */}
       <Footer/>
       <Contactus/>
       <Aboutus/>

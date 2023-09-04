@@ -9,6 +9,7 @@ export default {
         robotSlab:['Roboto Slab'],
         roboto:["Roboto"],
       }
+      te
     },
   },
   plugins: [],
