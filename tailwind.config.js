@@ -8,8 +8,10 @@ export default {
       fontFamily:{
         robotSlab:['Roboto Slab'],
         roboto:["Roboto"],
+      },
+      colors:{
+        instagram:'#E4405F'
       }
-      te
     },
   },
   plugins: [],

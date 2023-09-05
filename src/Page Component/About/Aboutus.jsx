@@ -30,7 +30,7 @@ function Aboutus() {
         
     
   return (
-    <div className='w-10/12 mx-auto bg-yellow-300 border'>
+    <div className='w-10/12 mx-auto py-5 bg-yellow-300'>
         <h1 className='my-5 text-5xl text-center font-bold text-slate-700 font-robotSlab font-bold'>About us</h1>
         <div className='px-10'>
             <p className='text-slate-700'>{slogan[1].p}</p>

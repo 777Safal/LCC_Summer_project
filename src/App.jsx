@@ -19,12 +19,12 @@ function App() {
     <div className='bg-gradient-to-b from-yellow-200 to-white'>
       {/* <SignUp/> */}
       {/* <Login/> */}
-      {/* <Nav/> */}
-      {/* <Home/> */}
-      {/* <Book/> */}
-      <Footer/>
+      <Nav/>
+      <Home/>
+      <Book/>
       <Contactus/>
       <Aboutus/>
+      <Footer/>
     </div>
   )
 }
