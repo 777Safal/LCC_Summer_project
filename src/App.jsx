@@ -26,7 +26,7 @@ function App() {
       <Contactus/>
       <Aboutus/>
       <Footer/>
-      <ConfirmBooking/>
+      {/* <ConfirmBooking/> */}
     </div>
   )
 }
