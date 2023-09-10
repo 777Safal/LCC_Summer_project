@@ -2,8 +2,7 @@ import React,{useRef} from 'react'
 
 function ConfirmBooking({confirmationRef}) {
   return (
-    
-        <dialog ref={confirmationRef}>
+        <div ref={confirmationRef}>
             <div className='w-2/5 mx-auto bg-slate-300 p-5 rounded-sm '>
             <p className='w-fit mx-auto'>Do you want to book a court?</p>
             <div className='w-fit my-3 mx-auto'>
@@ -16,7 +15,7 @@ function ConfirmBooking({confirmationRef}) {
             <p>You need to make 40% advance payment which is Rs. 520 through Khalti.</p>
             </div>
         </div>
-        </dialog>
+        </div>
     
   )
 }

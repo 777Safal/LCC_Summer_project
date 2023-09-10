@@ -54,7 +54,7 @@ function Nav() {
             <ul className='flex gap-3 items-center'>
             {data.map((val,i)=>{
                 return <li key={i} className='' >
-                    <a href={href[i]} className='px-3 py-2 hover:bg-red-600 hover:text-slate-50 text-center rounded-lg '>{val.h1}</a>
+                    <a href={href[i]} className='px-3 py-2 hover:bg-red-600 hover:transition duration-200 hover:ease-in hover:text-slate-50 text-center rounded-lg '>{val.h1}</a>
                 </li>
             })}
             </ul>
