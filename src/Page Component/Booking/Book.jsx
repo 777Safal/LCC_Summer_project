@@ -46,10 +46,10 @@ function Book() {
           </ul>
         </div>
       </div>
-      <div className='py-3 bg-yellow-100 grid grid-cols-5'>
+      <div className='py-3 bg-yellow-100 grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2'>
         {time.map((val,i)=>{
-          return <div key={i} className='w-48 py-2 rounded-sm border-2 hover:bg-yellow-300 border-yellow-300 bg-yellow-100 mx-2 my-4'>
-            <h1 className='text-center'>{val.h1}</h1>
+          return <div key={i} className=' py-2 rounded-sm border-2 hover:bg-yellow-300 border-yellow-300 bg-yellow-100 mx-2 my-4'>
+            <h1 className='text-center md:text-sm lg:text-base text-xs'>{val.h1}</h1>
           </div>
         })}
       </div>

@@ -10,6 +10,7 @@ import Contactus from './Page Component/Contact/Contactus'
 import Aboutus from './Page Component/About/Aboutus'
 import Login from './Page Component/Login And Signup/Login'
 import SignUp from './Page Component/Login And Signup/Signin'
+import ConfirmBooking from './Page Component/Booking/ConfirmBooking'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Contactus/>
       <Aboutus/>
       <Footer/>
+      <ConfirmBooking/>
     </div>
   )
 }
