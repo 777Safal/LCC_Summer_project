@@ -12,6 +12,8 @@ import Login from './Page Component/Login And Signup/Login'
 import SignUp from './Page Component/Login And Signup/Signin'
 import ConfirmBooking from './Page Component/Booking/ConfirmBooking'
 import Timetable from './Page Component/Timetable'
+import Test1 from './Practice/Test1'
+import Test2 from './Practice/Test2'
 
 
 function App() {
@@ -21,14 +23,19 @@ function App() {
     <div className='bg-gradient-to-b from-yellow-200 to-white'>
       {/* <SignUp/> */}
       {/* <Login/> */}
-      <Nav/>
+      {/* <Nav/>
       <Home/>
       <Book/>
       <Contactus/>
       <Aboutus/>
       <Footer/>
-      <Timetable/>
+      <Timetable/> */}
+
+
       {/* <ConfirmBooking/> */}
+      {/* <Test1/> */}
+      <Test2/>
+      
     </div>
   )
 }

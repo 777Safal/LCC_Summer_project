@@ -1,29 +1,29 @@
-import React from 'react'
+import React,{useState,useRef} from 'react'
 import {Form,Formik,Field,ErrorMessage} from 'formik'
 import * as yup from 'yup'
 import {FaFacebookF} from 'react-icons/fa'
 import {FcGoogle} from 'react-icons/fc'
+
 
 const schema=yup.object().shape({
     uid:yup.string().required('User ID is requreid'),
     password:yup.string().required('Password is requreid'),
 })
 function Login() {
-  
+
     const fieldsData=[
         {
             label:'User Id',
             type:'text',
             identiy:'uid',
-            placeholder:'User Id'
         },
         {
             label:'Password',
             type:'password',
-            identiy:'password',
-            placeholder:'password'
+            identiy:'password', 
         },
     ]
+
     
       return (
         <div className='bg-gradient-to-b from-yellow-200 to-white h-screen flex justify-center items-center'>
@@ -31,14 +31,14 @@ function Login() {
                 {/* Logins */}
                 <div className='bg-white w-2/5 h-full flex flex-col items-center shadow-2xl '> 
     
-                <div className='mt-6'>
+                <div className='mt-4'>
                     {/* logo */}
                     <div className='w-32 h-32 rounded-ful'>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREV7OqbWAYbL_nNEO2AFXJRwOvvTD-I4MwXMgZjnsb2A&s"  />
                     </div>
                     <div className='text-center text-lg font-bold text-red-600'>Monalisa Futsal</div>
                 </div>
-                    <div className='w-9/12 mt-6'>
+                    <div className='w-9/12 mt-3'>
                     <Formik
                         initialValues={{
                             uid:'',
@@ -53,9 +53,9 @@ function Login() {
                             return <Form onSubmit={handleSubmit}>
                                 {
                                     fieldsData.map((val,i)=>{
-                                        return <div key={i} className='h-16 flex flex-col'>
-                                            {/* <label className='mt-4 text-base text-red-700  font-semibold'>{val.label}</label> */}
-                                            <Field type={val.type} name={val.identiy} placeholder={val.placeholder} className='h-9 rounded-2xl bg-yellow-100 mt-4 placeholder:text-black p-4 text-sm outline-none'/>
+                                        return <div key={i} className='h-24 flex flex-col'>
+                                            <label className='text-base text-red-700  font-semibold'>{val.label}</label>
+                                            <Field type={val.type} name={val.identiy} placeholder={val.placeholder} className='h-9 rounded-2xl bg-yellow-100 mt-1 placeholder:text-black p-4 text-sm outline-none'/>
                                             <ErrorMessage name={val.identiy} component={'div'} className='text-sm text-red-600 font-semibold'/>
                                         </div>
                                     })
@@ -63,16 +63,10 @@ function Login() {
                                 <div className='w-full flex justify-center mt-10'>
                                     <button type='submit' className='bg-yellow-200 text-red-500 hover:bg-red-500 hover:text-yellow-200 rounded-2xl text-lg font-bold w-44'>Login</button>
                                 </div>
-                                <div className='mt-4'>
-                                    <div className='text-xs text-center'>Or Continue With</div>
-                                    <div className='flex flex-row justify-center mt-1'>
-                                        <div className='w-8 h-8 mr-3 bg-blue-500 text-white flex items-center justify-center rounded-xl'><FaFacebookF className=''/></div>
-                                        <div className='w-8 h-8 flex items-center justify-center rounded-xl'><FcGoogle/></div>
-                                    </div>
-                                </div>
-                                <div className='grid grid-cols-2 mt-14'>
-                                    <div className='text-left text-xs'>Forgot Password ?</div>
-                                    <div className='text-right text-xs'>Create New Account</div>
+                                <div className='grid grid-cols-2 mt-4'>
+                                    <button className='text-left text-xs'>Forgot Password ?</button>
+                                    <button 
+                                    className='text-right text-xs'>Create New Account</button>
                                 </div>
                             </Form>
                         }}
