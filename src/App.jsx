@@ -11,6 +11,7 @@ import Aboutus from './Page Component/About/Aboutus'
 import Login from './Page Component/Login And Signup/Login'
 import SignUp from './Page Component/Login And Signup/Signin'
 import ConfirmBooking from './Page Component/Booking/ConfirmBooking'
+import Timetable from './Page Component/Timetable'
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Contactus/>
       <Aboutus/>
       <Footer/>
+      <Timetable/>
       {/* <ConfirmBooking/> */}
     </div>
   )
