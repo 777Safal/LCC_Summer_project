@@ -10,7 +10,7 @@ function Nav() {
       window.addEventListener('scroll',actioning)
     
       return () => {
-        window.removeEventListener('scroll',actioning)
+        window.removeEventListener('xscroll',actioning)
       }
     }, []);
 

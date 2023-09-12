@@ -28,8 +28,8 @@ function App() {
       <Book/>
       <Contactus/>
       <Aboutus/>
-      <Footer/>
-      <Timetable/> */}
+      <Footer/> */}
+      {/* <Timetable/> */}
 
 
       {/* <ConfirmBooking/> */}
