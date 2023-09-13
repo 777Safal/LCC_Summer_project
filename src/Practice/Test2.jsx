@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
-import { useHistory } from 'react-router-dom'; // Import useHistory
+
 import { FaFacebookF } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 
@@ -13,7 +13,7 @@ import { FcGoogle } from 'react-icons/fc';
 // });
 
 function Test2() {
-  const history = useHistory(); // Initialize useHistory
+  
 
   const fieldsData = [
     {

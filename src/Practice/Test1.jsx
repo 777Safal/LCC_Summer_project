@@ -10,8 +10,8 @@ import Footer from '../Page Component/Footer/Footer'
 function Test1() {
   return (
     <div>
-        <Nav/>
-        <Home/>
+      <Nav/>
+      <Home/>
       <Book/>
       <Contactus/>
       <Aboutus/>

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState,useRef} from "react";
 import { Form, Formik, ErrorMessage, Field } from "formik";
 import { useAsyncError, useNavigate } from "react-router-dom";
 import * as yup from "yup";
@@ -36,7 +36,7 @@ function SignUp() {
   ];
 
   return (
-    <div className="bg-gradient-to-b font-poping from-yellow-200 to-white flex items-center justify-center ">
+    <div id="signin" className="bg-gradient-to-b font-poping from-yellow-200 to-white flex items-center justify-center ">
       <div className="w-3/4 my-10 p-5 bg-white rounded-md shadow-2xl">
         <div className="flex justify-center">
           <div className="w-32 h-32 rounded-ful flex">

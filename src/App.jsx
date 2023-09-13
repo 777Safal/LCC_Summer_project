@@ -14,6 +14,7 @@ import ConfirmBooking from './Page Component/Booking/ConfirmBooking'
 import Timetable from './Page Component/Timetable'
 import Test1 from './Practice/Test1'
 import Test2 from './Practice/Test2'
+import Test3 from './Practice/Test3'
 
 
 function App() {
@@ -30,11 +31,12 @@ function App() {
       <Aboutus/>
       <Footer/> */}
       {/* <Timetable/> */}
-
+  
 
       {/* <ConfirmBooking/> */}
       {/* <Test1/> */}
-      <Test2/>
+      {/* <Test2/> */}
+      <Test3/>
       
     </div>
   )
