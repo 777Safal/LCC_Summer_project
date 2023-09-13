@@ -4,8 +4,7 @@ import * as yup from 'yup';
 
 import { FaFacebookF } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
-
-
+  
 
 // const schema = yup.object().shape({
 //   uid: yup.string().required('User ID is required'),
@@ -13,8 +12,7 @@ import { FcGoogle } from 'react-icons/fc';
 // });
 
 function Test2() {
-  
-
+ 
   const fieldsData = [
     {
       label: 'User Id',
@@ -28,14 +26,14 @@ function Test2() {
     },
   ];
 
-  const handleLogin = (values) => {
-    if (values.uid === 'asdf@gmail.com' && values.password === 'aaaa') {
-      // Redirect to the Test1 page
-      history.push('../Practice/Test1');
-    } else {
-      alert('Invalid credentials. Please try again.');
-    }
-  };
+  // const handleLogin = (values) => {
+  //   if (values.uid === 'asdf@gmail.com' && values.password === 'aaaa') {
+  //     // Redirect to the Test1 page
+  //     history.push('../Practice/Test1');
+  //   } else {
+  //     alert('Invalid credentials. Please try again.');
+  //   }
+  // };
 
   return (
     <div className='bg-gradient-to-b from-yellow-200 to-white h-screen flex justify-center items-center'>
