@@ -17,6 +17,7 @@ import Test2 from './Practice/Test2'
 import Test3 from './Practice/Test3'
 import Test4 from './Practice/Test4'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Test5 from './Practice/Test5'
 
 function App() {
   
@@ -40,8 +41,8 @@ function App() {
       {/* <Test3/> */}
       <Router>
         <Routes>
-          <Route path='/' element={<Test4/>}/>
-          <Route path='test1' element={<Test1/>}/>
+          <Route path='/' element={<Test5/>}/>
+          <Route path='test1' element={<Test4/>}/>
           <Route path='test2' element={<Test2/>}/>
           <Route path='timetable' element={<Timetable/>}/>
         </Routes>
