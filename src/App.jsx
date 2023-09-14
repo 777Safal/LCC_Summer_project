@@ -41,8 +41,8 @@ function App() {
       {/* <Test3/> */}
       <Router>
         <Routes>
-          <Route path='/' element={<Test5/>}/>
-          <Route path='test1' element={<Test4/>}/>
+          <Route path='/' element={<Test4/>}/>
+          <Route path='test1' element={<Test1/>}/>
           <Route path='test2' element={<Test2/>}/>
           <Route path='timetable' element={<Timetable/>}/>
         </Routes>

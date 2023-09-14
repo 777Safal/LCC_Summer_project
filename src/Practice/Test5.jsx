@@ -7,7 +7,14 @@ function Test5() {
     const email = useRef();
 
     const handleSubmit =()=>{
-        console.log('hello');
+        if(name.current.value&&password.current.value&&age.current.value&&age.current.value&&email.current.value){
+            localStorage.setItem('name',name.current.value)
+            localStorage.setItem('password',password.current.value)
+            localStorage.setItem('age',age.current.value)
+            localStorage.setItem('email',email.current.value)
+            alert('account created succesfully!')
+        }
+
     }
   return (
     <div className='h-screen flex flex-col justify-center items-center'>
@@ -21,7 +28,7 @@ function Test5() {
                 placeholder='Age' ref={age} className='px-2 py-1 outline-none rounded-sm'/>
             </div>
             <button className='mt-4 w-fit px-5 py-2 bg-red-600 hover:bg-amber-400 text-amber-300 hover:text-red-600 rounded-sm'
-            onClick={()=>{handleSubmit()}}
+            onClick={()=>{handleSubmit()}} 
             >signin</button>
         </div>
     </div>
