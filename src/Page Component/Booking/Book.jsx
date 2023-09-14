@@ -1,19 +1,7 @@
 import React,{useState,useRef} from 'react'
-// import ConfirmBooking from './ConfirmBooking';
-
+import ConfirmBooking from './ConfirmBooking'
 
 function Book() {
-
-  // const confirmationRef = useRef();
-
-  // const [isEditOpen,setIsEditOpen]=useState(false)
-  // const [Showonfirm,setShowonfirm]=useState('')
-
-  
-    // const edits=()=>{
-    //     // setIsEditOpen(true)
-    //     confirmationRef.current.showModal();
-    // }
 
   const data=[
     {h1:'Book a Court'}
@@ -47,12 +35,8 @@ function Book() {
     {h1:'09:00 PM - 10:00 PM'},
   ]
 
-  // let model;
-  // if(Showonfirm){
-  //   model=<div className='fixed  top-[50%] left-0 w-screen h-screen'>
-  //     <ConfirmBooking/>
-  //   </div>
-  // }
+  const [confirm,setConfirm]=useState(false);
+
   return (
     <div id='ticketBook' className='my-10 w-10/12 mx-auto rounded-sm overflow-hidden shadow-xl'>
       <div className='bg-yellow-300 flex flex-col items-center'>
@@ -69,22 +53,19 @@ function Book() {
       </div>
       <div className='py-3 bg-yellow-100 grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2'>
         {time.map((val,i)=>{
-          return <button key={i} className=' py-2 rounded-sm border-2 hover:bg-yellow-300 border-yellow-300 bg-yellow-100 mx-2 my-4'>
+          return <button 
+          onClick={()=>{setConfirm(true)}}
+          key={i} className=' py-2 rounded-sm border-2 hover:bg-yellow-300 border-yellow-300 bg-yellow-100 mx-2 my-4'>
             <h1 className='text-center md:text-sm lg:text-base text-xs'>{val.h1}</h1>
           </button>
         })}
-      </div>
-
-      {/* <div>
-      <button onClick={edits}
-            className='px-2 bg-blue-400 rounded-md' >Edit</button>
-      </div> */}
+      </div>   
+      <ConfirmBooking isVisible={confirm} onClose={()=>{
+        setConfirm(false);
+      }}/>   
     </div>
   )
 }
 
 export default Book
 
-// onClick={()=>{
-//   setShowonfirm(val.h1)
-// }} 

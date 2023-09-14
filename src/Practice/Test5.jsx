@@ -14,7 +14,7 @@ function Test5() {
             localStorage.setItem('email',email.current.value)
             alert('account created succesfully!')
         }
-
+    
     }
   return (
     <div className='h-screen flex flex-col justify-center items-center'>

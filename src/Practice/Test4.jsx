@@ -11,6 +11,7 @@ function Test4() {
     const handleClick=()=>{
     if(email === 'safal@gmail.com' && password === '1234'){
       navigate('../test1');
+      alert('succesful login!!!')
     }else{
       alert('invalid email id or password');
     }

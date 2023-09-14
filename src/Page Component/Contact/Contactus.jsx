@@ -126,7 +126,7 @@ function Contactus() {
                         <div><button type='submit' 
                         className='w-40 h-12 ml-2 mt-20 text-center text-base 
                         font-medium font-poping rounded-md bg-red-600 shadow-lg shadow-red-500/50
-                        text-white hover:bg-white hover:text-red-600 border-2 border-red-600 '>{heading[3].h1}</button></div>
+                        text-white hover:scale-75'>{heading[3].h1}</button></div>
                       </Form>
                     }}
                   </Formik>
