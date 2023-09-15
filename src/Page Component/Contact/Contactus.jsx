@@ -47,9 +47,9 @@ function Contactus() {
   return (
     <div id="contact" className=''>
       {/* image section */}
-        <div className='my-10 h-80 bg-cover bg-center bg-no-repeat flex justify-center items-center
+        <div className='my-10 lg:h-80 md:h-64 h-44 bg-cover bg-center bg-no-repeat flex justify-center items-center
       bg-[url(https://images.unsplash.com/photo-1552318965-6e6be7484ada?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60)]'>
-          <h1 className='text-center text-5xl font-roboto font-extrabold 
+          <h1 className='text-center lg:text-5xl md:text-4xl text-3xl font-roboto font-extrabold 
           border-b-4 border-red-600 text-yellow-300 
             '>{heading[0].h1}</h1>
         </div>

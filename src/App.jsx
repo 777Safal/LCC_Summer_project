@@ -36,17 +36,17 @@ function App() {
       {/* <Timetable/> */}
   
 
-      {/* <Test1/> */}
+      <Test1/>
       {/* <Test2/> */}
       {/* <Test3/> */}
-      <Router>
+      {/* <Router>
         <Routes>
           <Route path='/' element={<Test4/>}/>
           <Route path='test1' element={<Test1/>}/>
           <Route path='test2' element={<Test2/>}/>
           <Route path='timetable' element={<Timetable/>}/>
         </Routes>
-      </Router>
+      </Router> */}
       {/* <Test6/> */}
 
 

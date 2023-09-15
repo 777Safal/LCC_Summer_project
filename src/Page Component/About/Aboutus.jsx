@@ -35,17 +35,20 @@ function Aboutus() {
         <div className='px-10'>
             <p className='text-slate-700'>{slogan[1].p}</p>
         </div>
-        <div className='px-10 mt-16 mb-5 grid grid-cols-4 gap-4'>
+        <div className='px-10 mt-16 mb-5 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-grid-4 sm:gap-4  '>
             {data.map((val,i)=>{
-                return <div key={i} className='h-56 bg-yellow-50 rounded-sm flex flex-col justify-center items-center relative shadow-xl'>
-                    <h1 className='w-[13ch] mx-auto mb-2 text-center leading-7 text-xl font-medium text-red-700'>{val.h1}</h1>
-                        <p className='text-sm text-justify px-4'>
-                            {val.p1}
-                        </p>
-
+                return <div key={i} className='py-8'>
+                        <div className='h-60 bg-yellow-50 rounded-sm flex flex-col justify-center items-center relative shadow-xl'>
                         <div className='w-20 h-20 absolute -top-12 bg-red-700 text-6xl flex items-center justify-center rounded-full text-yellow-300'>
-                            {val.icon}
-                        </div>
+                                {val.icon}
+                            </div>
+                            <h1 className='w-[13ch] mx-auto mb-2 text-center leading-7 text-xl font-medium text-red-700'>{val.h1}</h1>
+                            <p className='text-sm text-justify px-4'>
+                                {val.p1}
+                            </p>
+
+                            
+                    </div>
                 </div>
             })}
             
