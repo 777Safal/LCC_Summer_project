@@ -19,6 +19,14 @@ import Test4 from './Practice/Test4'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Test5 from './Practice/Test5'
 import Test6 from './Practice/Test6'
+import BookingStatus from './Page Component/Admin/BookingStauts'
+
+import Date from './Practice/Date'
+import Userdata from './Page Component/Admin/Userdata'
+import UserForm from './Page Component/Login And Signup/UserForm'
+import App1 from './Practice/App1'
+
+
 
 function App() {
   
@@ -36,20 +44,28 @@ function App() {
       {/* <Timetable/> */}
   
 
-      <Test1/>
+      {/* <Test1/> */}
       {/* <Test2/> */}
       {/* <Test3/> */}
-      {/* <Router>
+      {/* <Test4/> */}
+      <Router>
         <Routes>
           <Route path='/' element={<Test4/>}/>
           <Route path='test1' element={<Test1/>}/>
           <Route path='test2' element={<Test2/>}/>
-          <Route path='timetable' element={<Timetable/>}/>
+          <Route path='newaccount' element={<SignUp/>}/>
         </Routes>
-      </Router> */}
+      </Router>
       {/* <Test6/> */}
+      {/* <BookingStatus/> */}
 
-
+      {/* <CustomerBooking/> */}
+      {/* <P1/> */}
+      {/* <Date/> */}
+      {/* <Userdata/> */}
+      {/* <UserForm/> */}
+      {/* <App1/> */}
+      {/* <BookingStatus/> */}
       
     </div>
   )

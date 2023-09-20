@@ -42,7 +42,7 @@ function Footer() {
       ]
   return (
     <div className='md:h-96 h-fit px-2 md:py-2 py-5 mt-16 flex justify-center items-center bg-red-700'>
-        <div className='w-11/12 bg-black mx-auto md:flex md:justify-between grid grid-cols-1'>
+        <div className='w-11/12 mx-auto md:flex md:justify-between grid grid-cols-1'>
         <div className='p-2 h-fit md:w-56 '>
             <h1 className='text-xl md:text-center font-medium text-amber-400 '>{headings[0].h1}</h1>
             <address className='text-sm w-fit md:mx-auto md:pl-0 pl-10 not-italic'>
@@ -88,13 +88,13 @@ function Footer() {
         </div>
         </div>
 {/* copyright info */}
-    <div className='p-2'>
+    {/* <div className='p-2'>
             {datas.map((val,i)=>{
                 return <div key={i} className='font-medium text-amber-400'>
                     {val.h1}
                 </div>
             })}
-        </div>
+        </div> */}
         </div>
     </div>
   )

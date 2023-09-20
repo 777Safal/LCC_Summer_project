@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
-import ConfirmBooking from './ConfirmBooking';
+import Adminconfirm from '../../Page Component/Booking/Adminconfirm';
 
-function Book() {
+function BookA() {
   const data = [{ h1: 'Book a Court' }];
 
   const days = [
@@ -85,9 +85,9 @@ function Book() {
           );
         })}
       </div>
-      <ConfirmBooking isVisible={confirm} onClose={() => setConfirm(false)} />
+      <Adminconfirm isVisible={confirm} onClose={() => setConfirm(false)} />
     </div>
   );
 }
 
-export default Book;
+export default BookA;

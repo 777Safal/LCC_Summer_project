@@ -1,10 +1,16 @@
 import React,{useEffect,useState} from 'react'
 import {motion} from 'framer-motion'
 import logo from '../../Image/monalisaNObg.png'
+import { Navigate, useNavigate } from 'react-router-dom'
 
 function Nav() {
 
     const [showNav,setShowNav] = useState(false)
+    const navigate = useNavigate() ;
+
+    const handleClick=()=>{
+        navigate('../');
+    }
 
     useEffect(() => {
       window.addEventListener('scroll',actioning)
@@ -61,8 +67,9 @@ function Nav() {
             <motion.button 
             whileHover={{scale:1.3}}
             transition={{duration:0.1}}
-            
-            className='px-3 py-2 text-left rounded-lg bg-red-600 text-white cursor-pointer mr-3'>Login</motion.button>
+            className='px-3 py-2 text-left rounded-lg bg-red-600 text-white cursor-pointer mr-3'
+            onClick={handleClick}
+            >Logout</motion.button>
         </div>
     </div>
   )
