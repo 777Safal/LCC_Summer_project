@@ -25,6 +25,7 @@ import Date from './Practice/Date'
 import Userdata from './Page Component/Admin/Userdata'
 import UserForm from './Page Component/Login And Signup/UserForm'
 import App1 from './Practice/App1'
+import Time from './Practice/Time'
 
 
 
@@ -66,6 +67,7 @@ function App() {
       {/* <UserForm/> */}
       {/* <App1/> */}
       {/* <BookingStatus/> */}
+      {/* <Time/> */}
       
     </div>
   )
