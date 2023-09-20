@@ -48,6 +48,20 @@ function Book() {
 
   const [confirm, setConfirm] = useState(false);
 
+  const isTimeSlotPassed = (timeSlot) => {
+    const [startHour, startMinute] = timeSlot.split(':').map(Number);
+    const currentHour = currentTime.getHours();
+    const currentMinute = currentTime.getMinutes();
+
+    if (currentHour > startHour) {
+      return true; // Time slot has passed
+    } else if (currentHour === startHour && currentMinute >= startMinute) {
+      return true; // Time slot has passed
+    }
+
+    return false; // Time slot is in the future
+  };
+
 
   return (
     <div id='ticketBook' className='my-10 w-10/12 mx-auto rounded-sm overflow-hidden shadow-xl'>
@@ -65,10 +79,12 @@ function Book() {
 
       <div className='py-3 bg-yellow-100 grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2'>
         {time.map((val, i) => {
+           const isSlotPassed = isTimeSlotPassed(val.h1.split(' - ')[0]);
           return (
             <button
               key={i}
-              className={`py-2 rounded-sm border-2 hover:bg-yellow-300 border-yellow-300 bg-yellow-100 mx-2 my-4 }`}>
+              className={`py-2 rounded-sm border-2 hover:bg-yellow-300 border-yellow-300 bg-yellow-100 mx-2 my-4 ${isSlotPassed ? 'bg-red-600 cursor-not-allowed' : 'bg-blue-600'} }`}
+              disabled={isSlotPassed}>
               <h1 className='text-center md:text-sm lg:text-base text-xs'>{val.h1}</h1>
             </button>
           );

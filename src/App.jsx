@@ -49,15 +49,15 @@ function App() {
       {/* <Test2/> */}
       {/* <Test3/> */}
       {/* <Test4/> */}
-      {/* <Router>
+      <Router>
         <Routes>
           <Route path='/' element={<Test4/>}/>
           <Route path='test1' element={<Test1/>}/>
           <Route path='test2' element={<Test2/>}/>
           <Route path='newaccount' element={<SignUp/>}/>
         </Routes>
-      </Router> */}
-      <Test6/>
+      </Router>
+      {/* <Test6/> */}
       {/* <BookingStatus/> */}
 
       {/* <CustomerBooking/> */}
