@@ -1,10 +1,31 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import ConfirmBooking from './ConfirmBooking';
 
 function Book() {
   const data = [{ h1: 'Book a Court' }];
 
+  const [currentTime,setCurrentTime]=useState(new Date());
+  
+  const getCurrentTime=()=>{
+    const currentTimeInNepal = new Date().getTime();
+    return new Date (currentTimeInNepal);
+  }
 
+  useEffect(() => {
+    const interval = setInterval(()=>{
+      setCurrentTime(getCurrentTime());
+    },1000);
+  
+    return () => clearInterval(interval);
+  }, [])
+
+  const [currentDate,setCurrentDate]= useState(new Date());
+  const getCurrentDate=()=>{
+    const currentDate = new Date().getDate();
+    return new Date(currentDate);
+  }
+
+  
   const time = [
     { h1: '05:00 AM - 06:00 AM' },
     { h1: '06:00 AM - 07:00 AM' },
@@ -32,23 +53,40 @@ function Book() {
     <div id='ticketBook' className='my-10 w-10/12 mx-auto rounded-sm overflow-hidden shadow-xl'>
       <div className='bg-yellow-300 flex flex-col items-center'>
         <h1 className='text-3xl font-bold text-slate-700 font-robotSlab my-3 font-bold'>{data[0].h1}</h1>
-        <div>
-          
+        <div className='text-xl'>
+          {currentTime.toLocaleTimeString('en-US',{
+            timeZone:'Asia/kathmandu',
+          })}
+        </div>
+        <div className='text-xl'>
+          {currentDate.toLocaleDateString('en-Us',{day:'2-digit'})}
         </div>
       </div>
 
       <div className='py-3 bg-yellow-100 grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2'>
         {time.map((val, i) => {
-
           return (
             <button
               key={i}
-              className={`py-2 rounded-sm border-2 hover:bg-yellow-300 border-yellow-300 bg-yellow-100 mx-2 my-4 }`}
-            >
+              className={`py-2 rounded-sm border-2 hover:bg-yellow-300 border-yellow-300 bg-yellow-100 mx-2 my-4 }`}>
               <h1 className='text-center md:text-sm lg:text-base text-xs'>{val.h1}</h1>
             </button>
           );
         })}
+      </div>
+      <div className='mx-2 my-3 flex justify-between w-[250px]'>
+          <div className='w-fit flex flex-col items-center'>
+            <div className='w-6 h-6 rounded-full border-2 bg-yellow-100 border border-amber-300'></div>
+            <h1 className='text-sm'>Available</h1>
+          </div>
+          <div className='w-fit flex flex-col items-center'>
+            <div className='w-6 h-6 rounded-full border-2 bg-lime-300 border border-amber-300'></div>
+            <h1 className='text-sm'>Booked</h1>
+          </div>
+          <div className='w-fit flex flex-col items-center'>
+            <div className='w-6 h-6 rounded-full border-2 bg-red-600 border border-amber-300'></div>
+            <h1 className='text-sm'>Unavailable</h1>
+          </div>
       </div>
       <ConfirmBooking isVisible={confirm} onClose={() => setConfirm(false)} />
     </div>
