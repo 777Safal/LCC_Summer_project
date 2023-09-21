@@ -26,6 +26,7 @@ import Userdata from './Page Component/Admin/Userdata'
 import UserForm from './Page Component/Login And Signup/UserForm'
 import App1 from './Practice/App1'
 import Time from './Practice/Time'
+import Compare from './Practice/Compare'
 
 
 
@@ -49,14 +50,14 @@ function App() {
       {/* <Test2/> */}
       {/* <Test3/> */}
       {/* <Test4/> */}
-      <Router>
+      {/* <Router>
         <Routes>
           <Route path='/' element={<Test4/>}/>
           <Route path='test1' element={<Test1/>}/>
           <Route path='test2' element={<Test2/>}/>
           <Route path='newaccount' element={<SignUp/>}/>
         </Routes>
-      </Router>
+      </Router> */}
       {/* <Test6/> */}
       {/* <BookingStatus/> */}
 
@@ -68,7 +69,7 @@ function App() {
       {/* <App1/> */}
       {/* <BookingStatus/> */}
       {/* <Time/> */}
-      
+      <Compare/>
     </div>
   )
 }
