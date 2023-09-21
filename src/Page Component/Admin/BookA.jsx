@@ -71,15 +71,11 @@ function BookA() {
             <button
               onClick={() => {
                 if (!isDisabled) {
-                  setConfirm(true);
+                  setConfirm(false);
                 }
               }}
               key={i}
-              className={`py-2 rounded-sm border-2 hover:bg-yellow-300 border-yellow-300 bg-yellow-100 mx-2 my-4 ${
-                isDisabled ? 'opacity-50 cursor-not-allowed' : ''
-              }`}
-              disabled={isDisabled}
-            >
+              className={`py-2 rounded-sm border-2 hover:bg-yellow-300 border-yellow-300 bg-yellow-100 mx-2 my-4`}>
               <h1 className='text-center md:text-sm lg:text-base text-xs'>{val.h1}</h1>
             </button>
           );
