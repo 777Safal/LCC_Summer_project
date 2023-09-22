@@ -28,7 +28,7 @@ function BookA() {
   const time = [
     
     
-    {h1:'09:00 AM - 10:00 AM'},
+    
     {h1:'10:00 AM - 11:00 AM'},
     {h1:'11:00 AM - 12:00 PM'},
     {h1:'12:00 PM - 01:00 PM'},
@@ -67,7 +67,7 @@ function BookA() {
         <div className='text-xl px-5 py-2 bg-yellow-100'>
           {currentDate.toLocaleDateString('en-Us',{day:'2-digit'})}
         </div>
-        <div className='text-xl self-center ml-2'>
+        <div className='text-base font-normal self-center ml-2'>
           {currentTime.toLocaleTimeString('en-US',{
             timeZone:'Asia/kathmandu',
           })}
@@ -83,6 +83,8 @@ function BookA() {
           >07:00 AM - 08:00 AM</button>
         <button   className={`py-2 rounded-sm border-2  border-yellow-300 bg-red-600 mx-2 my-4 }`}
           >08:00 AM - 09:00 AM</button>
+        <button   className={`py-2 rounded-sm border-2  border-yellow-300 bg-red-600 mx-2 my-4 }`}
+          >09:00 AM - 10:00 AM</button>
       {time.map((val, i) => {
           return (
             <button
