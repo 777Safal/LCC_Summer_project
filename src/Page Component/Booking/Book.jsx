@@ -27,10 +27,9 @@ function Book() {
 
   
   const time = [
-    { h1: '05:00 AM - 06:00 AM' },
-    { h1: '06:00 AM - 07:00 AM' },
-    {h1:'07:00 AM - 08:00 AM'},
-    {h1:'08:00 AM - 09:00 AM'},
+    
+    
+    
     {h1:'09:00 AM - 10:00 AM'},
     {h1:'10:00 AM - 11:00 AM'},
     {h1:'11:00 AM - 12:00 PM'},
@@ -67,17 +66,28 @@ function Book() {
     <div id='ticketBook' className='my-10 w-10/12 mx-auto rounded-sm overflow-hidden shadow-xl'>
       <div className='bg-yellow-300 flex flex-col items-center'>
         <h1 className='text-3xl font-bold text-slate-700 font-robotSlab my-3 font-bold'>{data[0].h1}</h1>
-        <div className='text-xl'>
+        <div className='flex justify-center items-center'>
+        <div className='text-xl px-5 py-2 bg-yellow-100'>
+          {currentDate.toLocaleDateString('en-Us',{day:'2-digit'})}
+        </div>
+        <div className='text-xl self-center ml-2'>
           {currentTime.toLocaleTimeString('en-US',{
             timeZone:'Asia/kathmandu',
           })}
         </div>
-        <div className='text-xl'>
-          {currentDate.toLocaleDateString('en-Us',{day:'2-digit'})}
+        
         </div>
       </div>
 
       <div className='py-3 bg-yellow-100 grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2'>
+        <button   className={`py-2 rounded-sm border-2  border-yellow-300 bg-red-600 mx-2 my-4 }`}
+          >05:00 AM - 06:00 AM</button>
+        <button   className={`py-2 rounded-sm border-2  border-yellow-300 bg-red-600 mx-2 my-4 }`}
+          >06:00 AM - 07:00 AM</button>
+        <button   className={`py-2 rounded-sm border-2  border-yellow-300 bg-red-600 mx-2 my-4 }`}
+          >07:00 AM - 08:00 AM</button>
+        <button   className={`py-2 rounded-sm border-2  border-yellow-300 bg-red-600 mx-2 my-4 }`}
+          >08:00 AM - 09:00 AM</button>
         {time.map((val, i) => {
           return (
             <button
